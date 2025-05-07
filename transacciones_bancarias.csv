@@ -1,0 +1,501 @@
+ID_Transaccion,Monto,Ubicación,Método_Pago,Hora_Transaccion,Intentos_Fallidos,Fraude
+1,7280,Madrid,Tarjeta Débito,14,4,0
+2,870,Buenos Aires,Transferencia,23,4,0
+3,5400,Nueva York,Criptomoneda,16,0,0
+4,5201,Madrid,Tarjeta Débito,3,3,1
+5,5744,Nueva York,Tarjeta Crédito,21,3,0
+6,6275,Tokio,Criptomoneda,12,4,0
+7,476,Nueva York,Tarjeta Débito,17,2,0
+8,4436,Nueva York,Tarjeta Débito,0,1,1
+9,5588,Nueva York,Tarjeta Crédito,15,2,0
+10,8332,Buenos Aires,Tarjeta Crédito,12,1,0
+11,1695,Nueva York,Transferencia,9,4,0
+12,779,Madrid,Criptomoneda,11,1,0
+13,6959,Tokio,Criptomoneda,1,3,0
+14,2443,Tokio,Transferencia,22,0,0
+15,5321,Nueva York,Criptomoneda,2,0,0
+16,5061,Buenos Aires,Criptomoneda,9,4,1
+17,6430,Buenos Aires,Criptomoneda,1,3,0
+18,1194,Madrid,Criptomoneda,22,2,1
+19,4565,Nueva York,Criptomoneda,12,3,0
+20,3395,Tokio,Tarjeta Crédito,12,0,1
+21,6406,Buenos Aires,Criptomoneda,17,0,0
+22,8676,Nueva York,Tarjeta Crédito,2,3,0
+23,9284,Buenos Aires,Criptomoneda,6,3,0
+24,2568,Buenos Aires,Transferencia,13,0,0
+25,7859,Tokio,Tarjeta Débito,19,2,0
+26,2057,Londres,Tarjeta Crédito,16,4,0
+27,2757,Madrid,Criptomoneda,20,4,0
+28,9177,Madrid,Transferencia,11,3,0
+29,199,Tokio,Tarjeta Débito,15,4,0
+30,2744,Buenos Aires,Tarjeta Crédito,23,0,0
+31,3015,Nueva York,Tarjeta Débito,11,0,0
+32,4668,Buenos Aires,Transferencia,14,3,1
+33,1909,Tokio,Tarjeta Crédito,9,3,1
+34,7744,Madrid,Tarjeta Débito,6,3,1
+35,1277,Buenos Aires,Criptomoneda,19,2,0
+36,1538,Madrid,Tarjeta Crédito,4,4,0
+37,3566,Nueva York,Tarjeta Débito,0,3,0
+38,3900,Madrid,Transferencia,16,1,0
+39,8848,Madrid,Transferencia,2,1,0
+40,5403,Londres,Tarjeta Crédito,12,0,0
+41,8802,Londres,Tarjeta Débito,13,4,0
+42,8443,Londres,Tarjeta Crédito,23,3,0
+43,7523,Madrid,Tarjeta Crédito,17,1,0
+44,2622,Tokio,Tarjeta Débito,3,4,1
+45,7051,Madrid,Tarjeta Débito,17,0,0
+46,9565,Tokio,Criptomoneda,4,2,0
+47,6245,Tokio,Tarjeta Débito,15,4,1
+48,5496,Londres,Transferencia,0,4,0
+49,7109,Buenos Aires,Tarjeta Crédito,20,2,0
+50,9680,Nueva York,Tarjeta Crédito,13,4,0
+51,785,Londres,Transferencia,14,0,0
+52,8236,Londres,Tarjeta Débito,8,0,0
+53,3162,Buenos Aires,Transferencia,14,2,1
+54,1595,Nueva York,Transferencia,16,3,0
+55,3953,Madrid,Criptomoneda,23,1,1
+56,7565,Madrid,Transferencia,3,3,0
+57,3083,Londres,Tarjeta Crédito,11,4,0
+58,1031,Nueva York,Transferencia,4,1,0
+59,3853,Londres,Tarjeta Crédito,4,2,0
+60,7999,Tokio,Tarjeta Crédito,10,2,0
+61,9702,Londres,Tarjeta Crédito,5,1,1
+62,6883,Londres,Tarjeta Débito,6,0,0
+63,5685,Madrid,Criptomoneda,23,1,0
+64,171,Madrid,Tarjeta Crédito,13,4,0
+65,4307,Madrid,Tarjeta Crédito,23,0,0
+66,1005,Tokio,Tarjeta Débito,10,2,0
+67,7639,Madrid,Tarjeta Crédito,12,1,0
+68,9477,Nueva York,Transferencia,1,3,0
+69,1026,Buenos Aires,Transferencia,6,3,0
+70,7879,Nueva York,Criptomoneda,19,4,0
+71,6449,Nueva York,Tarjeta Crédito,3,3,0
+72,7902,Madrid,Tarjeta Débito,7,1,0
+73,6873,Buenos Aires,Transferencia,19,1,0
+74,7926,Buenos Aires,Tarjeta Débito,21,3,1
+75,8539,Buenos Aires,Tarjeta Débito,20,1,0
+76,888,Tokio,Transferencia,18,4,0
+77,9278,Madrid,Tarjeta Débito,12,0,0
+78,4897,Buenos Aires,Transferencia,13,4,1
+79,4869,Tokio,Tarjeta Débito,9,4,0
+80,6341,Londres,Transferencia,10,1,0
+81,8581,Londres,Tarjeta Crédito,1,0,1
+82,8694,Tokio,Criptomoneda,8,1,0
+83,7218,Tokio,Transferencia,16,2,0
+84,5286,Madrid,Transferencia,2,1,0
+85,2072,Madrid,Criptomoneda,23,1,0
+86,74,Londres,Transferencia,5,1,1
+87,8016,Buenos Aires,Transferencia,4,0,0
+88,2578,Londres,Tarjeta Débito,4,1,0
+89,5473,Buenos Aires,Criptomoneda,21,0,0
+90,2037,Buenos Aires,Tarjeta Crédito,14,3,0
+91,2705,Madrid,Transferencia,22,2,0
+92,9697,Nueva York,Criptomoneda,16,0,0
+93,5268,Nueva York,Tarjeta Débito,8,3,0
+94,5628,Tokio,Tarjeta Crédito,2,0,0
+95,6746,Madrid,Criptomoneda,19,0,0
+96,401,Buenos Aires,Tarjeta Crédito,16,2,0
+97,5902,Nueva York,Tarjeta Crédito,9,4,0
+98,3571,Buenos Aires,Tarjeta Crédito,2,4,0
+99,6194,Nueva York,Transferencia,17,0,1
+100,3109,Nueva York,Transferencia,17,1,0
+101,6288,Nueva York,Tarjeta Débito,16,3,0
+102,8402,Madrid,Tarjeta Débito,23,1,0
+103,3114,Londres,Criptomoneda,2,1,0
+104,7225,Buenos Aires,Tarjeta Débito,2,0,0
+105,2464,Madrid,Tarjeta Crédito,5,0,0
+106,9006,Madrid,Tarjeta Crédito,12,0,0
+107,2741,Madrid,Transferencia,23,0,0
+108,8164,Madrid,Tarjeta Crédito,14,4,0
+109,9772,Madrid,Criptomoneda,8,0,0
+110,5066,Tokio,Tarjeta Crédito,3,4,0
+111,8120,Buenos Aires,Tarjeta Crédito,13,4,1
+112,3850,Madrid,Criptomoneda,4,0,0
+113,1038,Buenos Aires,Tarjeta Débito,1,2,0
+114,7395,Tokio,Tarjeta Débito,10,3,0
+115,512,Tokio,Criptomoneda,8,1,0
+116,6920,Buenos Aires,Transferencia,23,4,0
+117,9072,Nueva York,Tarjeta Crédito,2,3,1
+118,6948,Londres,Criptomoneda,8,2,0
+119,4498,Nueva York,Tarjeta Crédito,2,1,0
+120,216,Nueva York,Transferencia,1,1,1
+121,5144,Nueva York,Tarjeta Crédito,11,4,0
+122,5987,Madrid,Criptomoneda,9,0,0
+123,7731,Tokio,Tarjeta Crédito,8,2,0
+124,7045,Nueva York,Tarjeta Débito,14,4,0
+125,1494,Tokio,Transferencia,7,2,0
+126,7868,Buenos Aires,Transferencia,4,0,0
+127,873,Londres,Transferencia,10,0,0
+128,2800,Buenos Aires,Criptomoneda,1,4,0
+129,7418,Buenos Aires,Transferencia,23,0,0
+130,8765,Madrid,Tarjeta Débito,14,3,0
+131,5126,Londres,Criptomoneda,5,1,0
+132,6029,Buenos Aires,Tarjeta Débito,7,4,0
+133,1767,Buenos Aires,Tarjeta Crédito,4,2,0
+134,7584,Londres,Tarjeta Crédito,15,3,0
+135,6384,Londres,Tarjeta Crédito,17,4,0
+136,6902,Buenos Aires,Tarjeta Crédito,5,0,0
+137,1688,Londres,Tarjeta Débito,4,0,0
+138,3252,Buenos Aires,Criptomoneda,15,0,0
+139,4646,Buenos Aires,Criptomoneda,12,0,0
+140,1069,Madrid,Transferencia,4,2,0
+141,6678,Nueva York,Tarjeta Débito,12,3,0
+142,9924,Buenos Aires,Tarjeta Crédito,16,1,0
+143,3167,Tokio,Tarjeta Débito,17,2,0
+144,5925,Nueva York,Transferencia,7,2,0
+145,9799,Nueva York,Transferencia,12,1,0
+146,2703,Nueva York,Tarjeta Débito,18,1,0
+147,3637,Madrid,Tarjeta Débito,2,0,0
+148,9565,Buenos Aires,Tarjeta Débito,23,2,0
+149,5460,Madrid,Criptomoneda,7,4,0
+150,1673,Buenos Aires,Tarjeta Crédito,1,1,0
+151,9731,Madrid,Tarjeta Débito,7,1,0
+152,5602,Madrid,Tarjeta Débito,12,3,0
+153,7402,Tokio,Tarjeta Débito,12,4,0
+154,1316,Madrid,Transferencia,0,4,0
+155,6786,Londres,Transferencia,5,1,1
+156,5874,Tokio,Criptomoneda,23,0,0
+157,9484,Madrid,Tarjeta Crédito,18,3,0
+158,7536,Nueva York,Criptomoneda,15,4,0
+159,8911,Londres,Tarjeta Crédito,7,1,0
+160,5585,Londres,Transferencia,0,4,0
+161,5540,Londres,Transferencia,15,3,0
+162,4423,Tokio,Transferencia,8,3,0
+163,3758,Madrid,Criptomoneda,12,2,0
+164,673,Madrid,Tarjeta Débito,10,1,0
+165,2008,Nueva York,Tarjeta Débito,12,3,0
+166,8004,Nueva York,Transferencia,20,2,0
+167,1505,Londres,Tarjeta Débito,9,2,0
+168,3314,Nueva York,Tarjeta Débito,3,4,0
+169,3773,Tokio,Criptomoneda,5,4,0
+170,5242,Madrid,Tarjeta Crédito,6,2,0
+171,1863,Londres,Transferencia,4,4,1
+172,6595,Nueva York,Transferencia,10,3,0
+173,1301,Tokio,Criptomoneda,12,0,0
+174,3591,Tokio,Criptomoneda,18,3,0
+175,7564,Nueva York,Tarjeta Débito,22,2,0
+176,7290,Madrid,Transferencia,9,2,0
+177,1646,Nueva York,Tarjeta Crédito,9,3,0
+178,3706,Londres,Criptomoneda,10,4,0
+179,708,Nueva York,Tarjeta Crédito,20,4,0
+180,4747,Tokio,Tarjeta Crédito,6,2,0
+181,864,Nueva York,Transferencia,17,1,0
+182,8174,Madrid,Transferencia,3,4,0
+183,5865,Buenos Aires,Criptomoneda,1,3,0
+184,7402,Nueva York,Transferencia,13,4,0
+185,6538,Madrid,Transferencia,12,3,0
+186,5259,Madrid,Transferencia,11,2,0
+187,5182,Tokio,Tarjeta Crédito,6,4,0
+188,1717,Madrid,Criptomoneda,1,3,0
+189,5801,Madrid,Tarjeta Débito,12,2,0
+190,9935,Madrid,Tarjeta Crédito,13,1,1
+191,5545,Madrid,Transferencia,16,3,0
+192,4941,Londres,Tarjeta Crédito,8,1,0
+193,3520,Londres,Transferencia,16,1,1
+194,212,Tokio,Transferencia,7,0,0
+195,4228,Nueva York,Tarjeta Crédito,1,4,0
+196,8968,Madrid,Criptomoneda,23,3,1
+197,4399,Nueva York,Transferencia,12,1,0
+198,2337,Nueva York,Criptomoneda,2,0,0
+199,8014,Tokio,Tarjeta Débito,15,2,0
+200,2941,Madrid,Transferencia,5,3,0
+201,7787,Madrid,Criptomoneda,18,1,0
+202,207,Buenos Aires,Criptomoneda,6,4,1
+203,7135,Nueva York,Tarjeta Débito,9,0,0
+204,1940,Nueva York,Criptomoneda,8,1,0
+205,6297,Londres,Criptomoneda,1,4,1
+206,8810,Buenos Aires,Tarjeta Débito,14,1,0
+207,9349,Londres,Transferencia,4,3,0
+208,4292,Londres,Criptomoneda,21,3,0
+209,2521,Londres,Criptomoneda,3,3,0
+210,9996,Tokio,Criptomoneda,19,0,0
+211,669,Tokio,Tarjeta Crédito,3,3,1
+212,2821,Londres,Tarjeta Débito,17,4,0
+213,7108,Buenos Aires,Tarjeta Crédito,3,1,0
+214,6556,Nueva York,Tarjeta Débito,16,2,0
+215,9571,Buenos Aires,Transferencia,11,4,1
+216,1996,Madrid,Transferencia,21,4,1
+217,8348,Tokio,Criptomoneda,16,3,0
+218,2921,Nueva York,Tarjeta Débito,9,0,0
+219,1744,Nueva York,Transferencia,21,1,0
+220,1853,Madrid,Tarjeta Débito,0,0,0
+221,8690,Madrid,Transferencia,21,1,0
+222,2986,Londres,Tarjeta Crédito,23,1,0
+223,1969,Tokio,Transferencia,17,0,1
+224,5769,Tokio,Tarjeta Crédito,17,4,0
+225,6704,Buenos Aires,Transferencia,13,1,0
+226,2395,Londres,Criptomoneda,14,0,0
+227,4746,Londres,Tarjeta Crédito,11,1,0
+228,1812,Londres,Transferencia,3,2,0
+229,8165,Londres,Criptomoneda,2,4,0
+230,8130,Tokio,Tarjeta Crédito,19,3,0
+231,6626,Tokio,Criptomoneda,11,1,0
+232,5544,Londres,Tarjeta Débito,6,2,1
+233,4071,Buenos Aires,Tarjeta Débito,10,3,0
+234,272,Nueva York,Tarjeta Crédito,0,3,0
+235,6297,Nueva York,Transferencia,5,1,0
+236,8825,Buenos Aires,Tarjeta Crédito,14,0,0
+237,9218,Londres,Criptomoneda,14,1,0
+238,2059,Tokio,Transferencia,18,2,1
+239,5433,Nueva York,Tarjeta Débito,10,3,0
+240,4558,Madrid,Transferencia,22,1,0
+241,3118,Madrid,Tarjeta Débito,1,0,0
+242,7168,Buenos Aires,Transferencia,13,1,0
+243,7410,Londres,Transferencia,1,4,0
+244,3180,Nueva York,Transferencia,3,0,0
+245,9884,Londres,Criptomoneda,16,2,0
+246,2265,Nueva York,Criptomoneda,2,3,0
+247,1164,Buenos Aires,Tarjeta Crédito,12,1,0
+248,4509,Buenos Aires,Tarjeta Crédito,8,0,0
+249,6305,Madrid,Tarjeta Débito,6,4,0
+250,6207,Londres,Criptomoneda,14,0,1
+251,9898,Madrid,Tarjeta Débito,22,4,0
+252,1658,Londres,Tarjeta Crédito,10,2,0
+253,5549,Madrid,Tarjeta Débito,19,3,0
+254,9647,Tokio,Tarjeta Crédito,1,2,0
+255,4209,Tokio,Criptomoneda,14,1,0
+256,8455,Tokio,Transferencia,13,0,1
+257,2567,Tokio,Criptomoneda,19,4,0
+258,5602,Nueva York,Tarjeta Débito,21,4,0
+259,108,Tokio,Tarjeta Débito,10,0,0
+260,2210,Buenos Aires,Criptomoneda,2,0,0
+261,2971,Buenos Aires,Criptomoneda,16,1,0
+262,4983,Nueva York,Tarjeta Crédito,11,2,1
+263,4443,Tokio,Tarjeta Débito,23,4,1
+264,2879,Tokio,Tarjeta Débito,20,1,0
+265,966,Tokio,Criptomoneda,14,2,0
+266,8362,Madrid,Transferencia,15,1,0
+267,5709,Londres,Tarjeta Débito,4,4,0
+268,6954,Madrid,Transferencia,19,0,0
+269,4503,Londres,Criptomoneda,5,0,0
+270,9502,Tokio,Criptomoneda,18,2,0
+271,4921,Tokio,Tarjeta Crédito,4,3,1
+272,3997,Madrid,Tarjeta Débito,2,2,0
+273,9729,Madrid,Transferencia,0,3,0
+274,6025,Londres,Tarjeta Crédito,5,1,0
+275,1228,Buenos Aires,Tarjeta Débito,14,1,0
+276,4506,Londres,Tarjeta Crédito,1,4,0
+277,4745,Madrid,Criptomoneda,2,3,0
+278,4565,Madrid,Tarjeta Débito,16,4,0
+279,9156,Nueva York,Tarjeta Crédito,23,0,0
+280,8060,Madrid,Tarjeta Crédito,11,3,0
+281,3456,Nueva York,Transferencia,17,2,0
+282,1055,Buenos Aires,Tarjeta Crédito,14,0,0
+283,6903,Londres,Tarjeta Débito,11,0,0
+284,1703,Londres,Tarjeta Débito,15,2,0
+285,3446,Nueva York,Transferencia,7,0,1
+286,8764,Londres,Tarjeta Débito,13,3,0
+287,5905,Madrid,Criptomoneda,16,4,0
+288,3364,Tokio,Tarjeta Débito,20,0,0
+289,235,Nueva York,Tarjeta Débito,7,3,0
+290,4903,Londres,Tarjeta Crédito,14,1,0
+291,7032,Nueva York,Tarjeta Crédito,13,3,0
+292,9161,Nueva York,Tarjeta Débito,17,4,1
+293,5610,Tokio,Transferencia,19,3,0
+294,8006,Madrid,Tarjeta Crédito,6,2,0
+295,9017,Nueva York,Transferencia,2,4,0
+296,7693,Londres,Tarjeta Débito,11,1,1
+297,4652,Buenos Aires,Tarjeta Débito,20,2,0
+298,7689,Nueva York,Criptomoneda,23,3,0
+299,8218,Nueva York,Tarjeta Crédito,2,4,0
+300,7349,Tokio,Tarjeta Débito,19,1,0
+301,9445,Madrid,Criptomoneda,13,2,0
+302,2215,Buenos Aires,Tarjeta Crédito,14,1,0
+303,1079,Londres,Tarjeta Débito,13,3,0
+304,3454,Buenos Aires,Tarjeta Débito,6,1,0
+305,1070,Londres,Tarjeta Crédito,16,0,1
+306,2337,Madrid,Tarjeta Crédito,11,2,0
+307,3430,Londres,Tarjeta Crédito,19,1,0
+308,311,Tokio,Tarjeta Débito,3,3,0
+309,616,Tokio,Tarjeta Débito,8,3,0
+310,3180,Tokio,Criptomoneda,5,1,0
+311,709,Tokio,Transferencia,15,3,0
+312,5098,Buenos Aires,Tarjeta Crédito,21,4,0
+313,9341,Madrid,Tarjeta Débito,21,4,0
+314,200,Londres,Tarjeta Débito,20,4,0
+315,990,Londres,Tarjeta Crédito,20,0,0
+316,2985,Tokio,Transferencia,1,1,0
+317,6112,Tokio,Tarjeta Crédito,23,0,0
+318,1194,Nueva York,Transferencia,7,3,0
+319,3337,Madrid,Tarjeta Débito,10,0,0
+320,3404,Buenos Aires,Transferencia,12,3,0
+321,8329,Londres,Criptomoneda,16,3,0
+322,1826,Nueva York,Tarjeta Débito,7,2,0
+323,5864,Nueva York,Criptomoneda,20,4,0
+324,6719,Londres,Tarjeta Crédito,17,3,0
+325,579,Buenos Aires,Tarjeta Crédito,17,2,0
+326,5452,Nueva York,Tarjeta Crédito,13,4,0
+327,1905,Nueva York,Transferencia,14,3,0
+328,2743,Madrid,Tarjeta Débito,5,3,0
+329,3873,Buenos Aires,Tarjeta Crédito,10,0,1
+330,7465,Nueva York,Tarjeta Crédito,12,0,0
+331,4024,Buenos Aires,Tarjeta Débito,0,4,0
+332,1696,Londres,Tarjeta Crédito,5,3,0
+333,3019,Tokio,Criptomoneda,8,1,0
+334,7816,Nueva York,Tarjeta Débito,7,0,0
+335,164,Madrid,Tarjeta Débito,10,4,0
+336,1419,Londres,Tarjeta Débito,21,3,1
+337,794,Buenos Aires,Criptomoneda,18,3,0
+338,8106,Londres,Tarjeta Débito,23,1,0
+339,7570,Nueva York,Criptomoneda,8,4,0
+340,7353,Buenos Aires,Tarjeta Débito,16,3,0
+341,7216,Tokio,Transferencia,11,0,0
+342,5606,Londres,Tarjeta Crédito,13,1,0
+343,5811,Nueva York,Transferencia,14,4,0
+344,2816,Madrid,Tarjeta Crédito,15,1,0
+345,547,Buenos Aires,Criptomoneda,21,0,0
+346,5996,Londres,Transferencia,21,4,1
+347,1851,Londres,Tarjeta Débito,19,1,1
+348,8726,Tokio,Tarjeta Crédito,0,2,0
+349,6981,Tokio,Tarjeta Crédito,9,0,0
+350,5635,Madrid,Transferencia,7,0,0
+351,2960,Madrid,Criptomoneda,17,0,1
+352,8002,Nueva York,Transferencia,0,2,0
+353,4790,Nueva York,Criptomoneda,1,2,0
+354,2378,Madrid,Criptomoneda,0,3,0
+355,6665,Madrid,Tarjeta Crédito,0,1,0
+356,8183,Buenos Aires,Transferencia,8,3,1
+357,4505,Tokio,Transferencia,12,1,1
+358,9173,Nueva York,Criptomoneda,0,2,0
+359,6012,Tokio,Transferencia,12,2,0
+360,6624,Tokio,Tarjeta Débito,19,3,0
+361,9368,Madrid,Tarjeta Débito,21,4,0
+362,5929,Buenos Aires,Transferencia,6,3,0
+363,863,Londres,Transferencia,1,1,0
+364,4156,Buenos Aires,Criptomoneda,5,3,0
+365,3779,Buenos Aires,Tarjeta Débito,6,0,0
+366,584,Tokio,Tarjeta Débito,13,1,1
+367,1158,Buenos Aires,Tarjeta Crédito,17,1,0
+368,6303,Nueva York,Criptomoneda,14,4,0
+369,6467,Tokio,Tarjeta Crédito,1,2,1
+370,7519,Nueva York,Tarjeta Débito,9,1,0
+371,9917,Londres,Criptomoneda,22,2,0
+372,4787,Tokio,Transferencia,11,3,1
+373,3864,Londres,Criptomoneda,16,0,1
+374,2501,Tokio,Transferencia,7,4,0
+375,3134,Madrid,Transferencia,10,2,0
+376,5701,Buenos Aires,Criptomoneda,2,1,0
+377,3061,Madrid,Transferencia,5,2,0
+378,14,Londres,Tarjeta Crédito,8,1,1
+379,5232,Buenos Aires,Tarjeta Débito,5,2,0
+380,5325,Tokio,Transferencia,8,1,0
+381,4879,Buenos Aires,Tarjeta Crédito,6,3,0
+382,886,Nueva York,Transferencia,8,1,0
+383,9193,Buenos Aires,Tarjeta Débito,17,1,0
+384,7037,Nueva York,Tarjeta Crédito,11,0,0
+385,4152,Buenos Aires,Tarjeta Débito,7,1,1
+386,6976,Nueva York,Tarjeta Débito,7,0,0
+387,7089,Londres,Tarjeta Crédito,17,4,0
+388,7997,Madrid,Tarjeta Crédito,19,0,0
+389,6809,Tokio,Tarjeta Crédito,14,3,0
+390,4475,Buenos Aires,Criptomoneda,6,0,0
+391,645,Madrid,Tarjeta Crédito,10,4,0
+392,1703,Tokio,Tarjeta Crédito,19,3,0
+393,9884,Tokio,Tarjeta Crédito,15,2,0
+394,4762,Nueva York,Tarjeta Crédito,3,2,0
+395,8321,Londres,Transferencia,5,0,0
+396,840,Londres,Criptomoneda,21,0,0
+397,5187,Madrid,Tarjeta Débito,2,4,0
+398,9571,Londres,Tarjeta Crédito,8,4,0
+399,8942,Buenos Aires,Transferencia,9,1,0
+400,8318,Londres,Transferencia,13,4,0
+401,5959,Madrid,Transferencia,10,1,0
+402,2848,Londres,Tarjeta Débito,17,3,0
+403,1160,Buenos Aires,Tarjeta Crédito,21,0,1
+404,7570,Nueva York,Criptomoneda,11,3,0
+405,1941,Madrid,Criptomoneda,22,4,0
+406,9214,Nueva York,Transferencia,11,3,0
+407,1674,Nueva York,Tarjeta Débito,12,3,1
+408,1091,Nueva York,Tarjeta Débito,12,3,0
+409,522,Tokio,Tarjeta Débito,18,4,0
+410,7815,Tokio,Criptomoneda,18,3,0
+411,5247,Nueva York,Transferencia,22,1,0
+412,569,Madrid,Tarjeta Crédito,13,4,0
+413,3682,Buenos Aires,Criptomoneda,3,3,0
+414,7414,Buenos Aires,Transferencia,12,4,1
+415,3353,Londres,Transferencia,7,2,0
+416,4080,Madrid,Tarjeta Crédito,22,1,0
+417,9672,Tokio,Tarjeta Crédito,20,3,0
+418,590,Nueva York,Tarjeta Crédito,22,2,1
+419,7014,Londres,Tarjeta Débito,18,2,0
+420,8140,Buenos Aires,Tarjeta Crédito,11,4,1
+421,3157,Tokio,Transferencia,17,2,0
+422,4259,Tokio,Tarjeta Crédito,5,1,0
+423,1689,Nueva York,Transferencia,17,1,0
+424,3516,Buenos Aires,Criptomoneda,18,0,0
+425,7263,Madrid,Tarjeta Débito,21,1,0
+426,2754,Tokio,Criptomoneda,4,2,0
+427,9445,Nueva York,Criptomoneda,23,1,0
+428,5198,Madrid,Transferencia,8,4,0
+429,2151,Buenos Aires,Criptomoneda,2,0,0
+430,6627,Tokio,Transferencia,9,2,0
+431,2489,Madrid,Tarjeta Crédito,18,0,0
+432,6494,Madrid,Tarjeta Crédito,2,2,0
+433,9837,Madrid,Transferencia,21,4,0
+434,7431,Tokio,Tarjeta Crédito,14,0,1
+435,9959,Tokio,Tarjeta Débito,0,3,0
+436,4462,Londres,Criptomoneda,6,2,0
+437,5891,Buenos Aires,Tarjeta Débito,11,3,1
+438,6675,Nueva York,Criptomoneda,16,0,0
+439,2859,Madrid,Tarjeta Crédito,20,3,0
+440,7400,Londres,Tarjeta Débito,23,3,0
+441,6915,Nueva York,Tarjeta Crédito,19,0,1
+442,2499,Londres,Criptomoneda,4,4,0
+443,9833,Tokio,Transferencia,3,3,0
+444,9217,Madrid,Transferencia,11,3,0
+445,9550,Nueva York,Tarjeta Débito,19,4,0
+446,4621,Nueva York,Tarjeta Crédito,23,3,0
+447,2849,Nueva York,Tarjeta Crédito,17,3,0
+448,8537,Nueva York,Tarjeta Débito,16,3,0
+449,5888,Nueva York,Transferencia,18,1,0
+450,9097,Londres,Criptomoneda,8,4,0
+451,6313,Madrid,Tarjeta Débito,3,3,0
+452,861,Tokio,Criptomoneda,20,4,0
+453,1697,Tokio,Transferencia,1,2,0
+454,6843,Tokio,Tarjeta Crédito,3,2,0
+455,2437,Tokio,Transferencia,1,3,0
+456,9770,Londres,Tarjeta Débito,14,4,0
+457,4010,Buenos Aires,Tarjeta Crédito,1,4,0
+458,5062,Madrid,Tarjeta Débito,3,4,0
+459,2748,Nueva York,Tarjeta Débito,5,1,0
+460,5742,Buenos Aires,Transferencia,6,2,0
+461,5397,Tokio,Tarjeta Débito,9,4,1
+462,8012,Buenos Aires,Transferencia,18,4,1
+463,5546,Madrid,Tarjeta Crédito,18,1,0
+464,3923,Nueva York,Transferencia,21,1,0
+465,1076,Nueva York,Tarjeta Crédito,11,4,1
+466,7733,Madrid,Transferencia,2,0,0
+467,4390,Madrid,Criptomoneda,12,4,0
+468,4117,Tokio,Criptomoneda,17,4,0
+469,5736,Nueva York,Tarjeta Débito,7,1,0
+470,3383,Buenos Aires,Transferencia,20,1,0
+471,8955,Londres,Transferencia,14,4,0
+472,2092,Londres,Tarjeta Crédito,0,4,0
+473,8977,Madrid,Tarjeta Débito,2,4,0
+474,6758,Tokio,Transferencia,7,1,0
+475,9827,Londres,Tarjeta Débito,3,4,0
+476,427,Nueva York,Criptomoneda,15,4,0
+477,8316,Madrid,Transferencia,22,3,0
+478,8818,Buenos Aires,Transferencia,9,0,0
+479,3984,Madrid,Tarjeta Débito,11,2,0
+480,3277,Buenos Aires,Transferencia,13,0,0
+481,835,Madrid,Tarjeta Débito,13,3,1
+482,7678,Madrid,Transferencia,1,2,0
+483,5755,Madrid,Tarjeta Crédito,22,4,1
+484,9718,Buenos Aires,Tarjeta Débito,4,3,0
+485,422,Buenos Aires,Transferencia,4,4,0
+486,7553,Madrid,Criptomoneda,5,1,0
+487,7597,Londres,Transferencia,12,3,1
+488,738,Tokio,Criptomoneda,8,1,0
+489,7174,Tokio,Criptomoneda,21,3,0
+490,8877,Tokio,Tarjeta Crédito,14,3,0
+491,5998,Buenos Aires,Tarjeta Débito,13,1,0
+492,2514,Buenos Aires,Transferencia,23,2,0
+493,2977,Londres,Tarjeta Crédito,6,0,1
+494,2796,Tokio,Transferencia,19,4,0
+495,1132,Tokio,Criptomoneda,1,3,0
+496,4089,Madrid,Tarjeta Débito,6,4,0
+497,1581,Buenos Aires,Transferencia,5,1,0
+498,5083,Tokio,Transferencia,16,4,0
+499,5114,Londres,Criptomoneda,1,1,0
+500,2153,Londres,Transferencia,2,4,0
