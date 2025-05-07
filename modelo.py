@@ -49,6 +49,8 @@ vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deseri
 client = genai.Client(api_key="AIzaSyD83oAyLmHEnIj-emaz3CaciuniNoqYNDg")
 # Función para consultar con Mistral, asegurando que solo use el contexto proporcionado
 def query_ollama_with_context(context, question):
+    print("CONTEXTO", context)
+    print("FIN CONTEXTO")
     response = client.models.generate_content(
         model="gemini-2.0-flash",
         config=types.GenerateContentConfig(
@@ -56,7 +58,6 @@ def query_ollama_with_context(context, question):
         usa el siguiente contexto para responder la pregunta.
         El contexto contiene información sobre transacciones y si fueron fraudes o no.
         El contexto contiene Monto ┆ Ubicación    ┆ Método_Pago   ┆ Hora_Transaccion ┆ Intentos_Fallidos | fraude.         
-        usa solo la información del contexto para responder, no uses información externa.
         Respuesta:
         responde siempre si la transacción es fraude o no en menos de 100 palabras con una explicación breve. 
         responde en el siguiente formato en texto plano:
@@ -144,6 +145,6 @@ h = pl.DataFrame({
 question = f"""
 la transaccion {h} es fraude ? 
 """
-response = rag_pipeline(question, vectorstore)
+""" response = rag_pipeline(question, vectorstore)
 
-print(response)
+print(response) """

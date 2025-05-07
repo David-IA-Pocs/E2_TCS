@@ -85,9 +85,7 @@ async def recibir_transaccion_geminiEmb(transaccion: BD_embedings):
     df = pl.DataFrame([data_dict])
     #g= pl.DataFrame(transaccion)
     print (df)
-    question = f"""
-la transaccion {df} es fraude ? 
-"""
+    question = f""" {df} """
     response = mo.rag_pipeline(question, vectorstore)
     return {"mensaje": "Transacción recibida", "datos": str(response)}
 #uso de embedings con ollama

@@ -16,7 +16,7 @@ def cargar_modelo():
     return modelo_cargado
 def scaler():
     standarscaler = StandardScaler()
-    df_resampled = pd.DataFrame(pd.read_csv("data1/df_resampled.csv"))
+    df_resampled = pd.DataFrame(pd.read_csv("data/df_resampled.csv"))
     ## Separando nuestros datos en prueba y entrenamiento
     df_resampled =df_resampled.drop(columns='Unnamed: 0')
     y = df_resampled['isFraud']
