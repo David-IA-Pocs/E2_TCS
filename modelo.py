@@ -7,20 +7,13 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings
 import polars as pl
+client = genai.Client(api_key="")
 
-""" # Detectar codificación
-file_path = "transacciones.csv"
-#file_path = "doc.txt"
-with open(file_path, "rb") as raw_file:
-    result = chardet.detect(raw_file.read())
-    detected_encoding = result['encoding']
-    print(f"Codificación detectada: {detected_encoding}")
-
-# Leer usando la codificación detectada
-with open(file_path, "r", encoding=detected_encoding, errors='replace') as file:
+""" 
+file_path = "transacciones_bancarias.csv"
+with open(file_path, "r",  errors='replace') as file:
     text = file.read()
  """
-
 # Función personalizada para dividir el texto en fragmentos manejables
 def custom_text_splitter(text, chunk_size, chunk_overlap):
     chunks = []
@@ -34,28 +27,28 @@ def custom_text_splitter(text, chunk_size, chunk_overlap):
 # Dividir el texto en fragmentos manejables
 #chunks = custom_text_splitter(text, chunk_size=700, chunk_overlap=100)
 
-
-
 # Configurar embeddings usando Ollama con el modelo 'nomic-embed-text'
-#embeddings = OllamaEmbeddings(model="all-minilm:33m")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
 # Crear la base de datos vectorial FAISS
 #vectorstore = FAISS.from_texts(chunks, embeddings)
 #vectorstore.save_local("faiss_index")
+
+# Cargar la base de datos vectorial FAISS existente
 vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
-#print("Fragmentos almacenados en la base de datos vectorial FAISS.")
-client = genai.Client(api_key="AIzaSyD83oAyLmHEnIj-emaz3CaciuniNoqYNDg")
-# Función para consultar con Mistral, asegurando que solo use el contexto proporcionado
-def query_ollama_with_context(context, question):
-    print("CONTEXTO", context)
-    print("FIN CONTEXTO")
+# Función para consultar con gemini
+def query_gemini_with_context(context, question):
+    #print("CONTEXTO", context)
+    #print("FIN CONTEXTO")
+    if not context.strip():  # Si el contexto está vacío, no tenemos información suficiente
+        return "Con los datos de la base de datos no es posible predecir fraude o no ."
+
     response = client.models.generate_content(
         model="gemini-2.0-flash",
         config=types.GenerateContentConfig(
             system_instruction=f"""
-        usa el siguiente contexto para responder la pregunta.
+        usa el siguiente contexto para responder si la transaccion puede ser fraude o no.
         El contexto contiene información sobre transacciones y si fueron fraudes o no.
         El contexto contiene Monto ┆ Ubicación    ┆ Método_Pago   ┆ Hora_Transaccion ┆ Intentos_Fallidos | fraude.         
         Respuesta:
@@ -67,29 +60,32 @@ def query_ollama_with_context(context, question):
         ------------------------"""
 
 ),
-        contents=f"Contexto: {context}, Pregunta: {question}",
+        contents=f"Contexto: {context}, transaccion: {question}",
     )
     #print ("RESPONSE", response.text)
     return str(response.text)
 
-def query_ollama_with_context1(context, question):
+def query_ollama_with_context(context, question):
     #print("CONTEXTO", context)
     #print("FIN CONTEXTO")
-    if not context.strip():  # Si el contexto está vacío, evitar respuestas fuera del documento
-        return "Esa información no está en nuestra base de datos."
+    if not context.strip():  # Si el contexto está vacío, no tenemos información suficiente
+        return "Con los datos de la base de datos no es posible predecir fraude o no ."
 
     prompt = f"""
-        usa el siguiente contexto para responder la pregunta.
-        El contexto contiene información sobre transacciones y si fueron fraudes o no.
-        El contexto contiene Monto ┆ Ubicación    ┆ Método_Pago   ┆ Hora_Transaccion ┆ Intentos_Fallidos | fraude.         
-        usa solo la información del contexto para responder, no uses información externa.
-        Contexto: {context}
-        Pregunta: {question}
-        Respuesta:
-        responde siempre si la transacción es fraude o no en menos de 100 palabras con una explicación breve. 
-        responde siempre en el siguiente formato:
-        explicacion: "no mas de 100 palabras"
-        omite la palabra text o json y las comillas
+        Eres un asistente de IA que ayuda a los usuarios a entender una tabla que tiene los siguientes campos
+            type_CASH_IN,type_CASH_OUT,type_PAYMENT,type_TRANSFER,amount,type_2_CC,type_2_CM,day,part_of_the_day_madrugada,
+            part_of_the_day_mañana,part_of_the_day_noche,part_of_the_day_tarde,isFraud.
+            los registros estan en dumies, es decir, en 0 y 1.
+            las columnas  type_CASH_IN,type_CASH_OUT,type_PAYMENT,type_TRANSFER pertenece a la transaccion, es decir, si es un ingreso, un egreso, un pago o una transferencia.
+            las columnas type_2_CC,type_2_CM, son el tipo de tarjeta, es decir, si es una tarjeta de credito o una tarjeta de debito.
+            las columnas day,part_of_the_day_madrugada,part_of_the_day_mañana,part_of_the_day_noche,part_of_the_day_tarde son el dia y la hora de la transaccion, es decir, si es un lunes, martes, miercoles, jueves, viernes, sabado o domingo.
+            usa el registro amount, que es el monto de la transaccion, para ayudar al analisis determinar si es un fraude o no.
+            con esta informacion genera una respuesta en español, que explique si la transaccion es fraude o no, y porque es fraude o no.
+            si es 1 es fraude, si es 0 no es fraude.
+            no analices el modelo, solo la tabla y los datos que te doy.
+            no uses las variables que te doy, usa palabras mas claras y entendibles para el usuario.
+          Contexto: {context}
+        transaccion: {question}  
         ------------------------
 
         
@@ -106,18 +102,20 @@ def query_ollama_with_context1(context, question):
 # Recuperar fragmentos relevantes
 def retrieve_relevant_chunks(query, vectorstore):
     results = vectorstore.similarity_search(query, k=3)
-    #print("RESULTS", results)
-    #results = vectorstore.similarity_search_with_score(query=question, k=3)
-    #filtered_context = [doc.page_content for doc, score in results if score > 0.5]
-
-
     return results if results else []
+   
+# Pipeline RAG 
+def rag_pipeline_gemini(question, vectorstore):
+    results = retrieve_relevant_chunks(question, vectorstore)
     
-
-
-
-# Pipeline RAG con validación estricta de relevancia
-def rag_pipeline(question, vectorstore):
+    if not results:
+        return  print("Esa información no está en el documento cargado, pero basado en la información que tengo la siguiente respuesta te puede ser útil\n")
+    
+    context = "\n".join([result.page_content for result in results])
+    
+    response = query_gemini_with_context(context, question)
+    return response
+def rag_pipeline_ollama(question, vectorstore):
     results = retrieve_relevant_chunks(question, vectorstore)
     
     if not results:
@@ -127,24 +125,3 @@ def rag_pipeline(question, vectorstore):
     
     response = query_ollama_with_context(context, question)
     return response
-g = pl.DataFrame({"type_CASH_IN" :1, "type_CASH_OUT" :0, "type_PAYMENT" :0, "type_TRANSFER" :0, "amount"   :6000.56, "type_2_CC" :1, "type_2_CM" :0,
-                   "day" :1, "part_of_the_day_madrugada" :1, "part_of_the_day_mañana" :0, "part_of_the_day_noche" :0, "part_of_the_day_tarde": 0})
-
-# Ejemplo de consulta válida
-#53,3162,Buenos Aires,Transferencia,14,2,
-#7926,Buenos Aires,Tarjeta Débito,21,3
-h = pl.DataFrame({
-    "Monto": [5098],
-    "Ubicación": ["BuenosAires"],
-    "Método_Pago": ["Criptomoneda"],
-    "Hora_Transaccion": [9],
-    "Intentos_Fallidos": [4],
-    
-})
-
-question = f"""
-la transaccion {h} es fraude ? 
-"""
-""" response = rag_pipeline(question, vectorstore)
-
-print(response) """
